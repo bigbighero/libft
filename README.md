@@ -1,5 +1,5 @@
 # libft
-Project name: libft.a
+Project name: LIBFT
 
 Program name: libft.a
 
