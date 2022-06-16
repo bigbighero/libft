@@ -6,7 +6,7 @@
 /*   By: roferrei <roferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/03 23:25:57 by roferrei          #+#    #+#             */
-/*   Updated: 2022/06/15 10:02:48 by roferrei         ###   ########.fr       */
+/*   Updated: 2022/06/17 00:24:40 by roferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void	*ft_memset(void *s, int c, size_t n)
 {
-	char	*str;
+	unsigned char	*str;
 
-	str = (char *)s;
+	str = (unsigned char *)s;
 	while (n > 0)
 	{
 		str[n - 1] = c;
