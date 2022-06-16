@@ -6,16 +6,16 @@
 /*   By: roferrei <roferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/03 23:26:15 by roferrei          #+#    #+#             */
-/*   Updated: 2022/06/04 00:49:16 by roferrei         ###   ########.fr       */
+/*   Updated: 2022/06/16 23:30:32 by roferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
+size_t	ft_strlen(const char *s)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
-	while (str[i] != '\0')
+	while (s[i] != '\0')
 		i++;
 	return (i);
 }

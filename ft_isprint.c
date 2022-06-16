@@ -6,23 +6,15 @@
 /*   By: roferrei <roferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/03 23:25:43 by roferrei          #+#    #+#             */
-/*   Updated: 2022/06/04 00:34:03 by roferrei         ###   ########.fr       */
+/*   Updated: 2022/06/16 23:27:27 by roferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isprint(char *str)
-{
-	int	i;
+#include <ctype.h>
 
-	i = 0;
-	while (str[i] != '\0')
-	{
-		if (str[i] >= 32 && str[i] <= 126)
-		{
-			i++;
-		}
-		else
-			return (0);
-	}
-	return (1);
+int	ft_isprint(int c)
+{
+	if (c >= 32 && c <= 126)
+		return (1);
+	return (0);
 }
