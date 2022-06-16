@@ -6,7 +6,7 @@
 /*   By: roferrei <roferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/03 23:25:26 by roferrei          #+#    #+#             */
-/*   Updated: 2022/06/16 23:14:50 by roferrei         ###   ########.fr       */
+/*   Updated: 2022/06/16 23:33:27 by roferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 */
 
 // #include <stdio.h>
-// #include <stdlib.h>
+#include <stdlib.h>
 
 int	ft_atoi(const char *nptr)
 {

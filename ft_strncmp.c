@@ -6,9 +6,11 @@
 /*   By: roferrei <roferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/03 23:26:18 by roferrei          #+#    #+#             */
-/*   Updated: 2022/06/16 23:12:05 by roferrei         ###   ########.fr       */
+/*   Updated: 2022/06/16 23:36:43 by roferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <string.h>
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
