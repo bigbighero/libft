@@ -6,23 +6,15 @@
 /*   By: roferrei <roferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/03 23:25:39 by roferrei          #+#    #+#             */
-/*   Updated: 2022/06/04 00:33:54 by roferrei         ###   ########.fr       */
+/*   Updated: 2022/06/16 23:25:00 by roferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isdigit(char *str)
-{
-	int	i;
+#include <ctype.h>
 
-	i = 0;
-	while (str[i] != '\0')
-	{
-		if (str[i] >= '0' && str[i] <= '9')
-		{
-			i++;
-		}
-		else
-			return (0);
-	}
-	return (1);
+int	ft_isdigit(int c)
+{
+	if ((c >= '0' && c <= '9'))
+		return (1);
+	return (0);
 }
