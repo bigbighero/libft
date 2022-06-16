@@ -6,22 +6,18 @@
 /*   By: roferrei <roferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/03 23:26:28 by roferrei          #+#    #+#             */
-/*   Updated: 2022/06/04 01:08:19 by roferrei         ###   ########.fr       */
+/*   Updated: 2022/06/16 23:40:47 by roferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_tolower(char *str)
-{
-	int	i;
+#include <ctype.h>
 
-	i = 0;
-	while (str[i] != '\0')
+int	ft_tolower(int c)
+{
+	if (c >= 'A' && c <= 'Z')
 	{
-		if (str[i] >= 'A' && str[i] <= 'Z')
-		{
-			str[i] = str[i] + 32;
-		}
-		i++;
+		return (c + 32);
 	}
-	return (str);
+	else
+		return (c);
 }

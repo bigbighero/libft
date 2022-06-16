@@ -6,22 +6,18 @@
 /*   By: roferrei <roferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/03 23:26:30 by roferrei          #+#    #+#             */
-/*   Updated: 2022/06/04 01:08:22 by roferrei         ###   ########.fr       */
+/*   Updated: 2022/06/16 23:42:37 by roferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_toupper(char *str)
-{
-	int	i;
+#include <ctype.h>
 
-	i = 0;
-	while (str[i] != '\0')
+int	ft_toupper(int c)
+{
+	if (c >= 'a' && c <= 'z')
 	{
-		if (str[i] >= 'a' && str[i] <= 'z')
-		{
-			str[i] = str[i] - 32;
-		}
-		i++;
+		return (c - 32);
 	}
-	return (str);
+	else
+		return (c);
 }
