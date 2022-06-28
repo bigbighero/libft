@@ -6,7 +6,7 @@
 /*   By: roferrei <roferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/03 23:26:30 by roferrei          #+#    #+#             */
-/*   Updated: 2022/06/16 23:42:37 by roferrei         ###   ########.fr       */
+/*   Updated: 2022/06/28 15:23:54 by roferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,3 +21,8 @@ int	ft_toupper(int c)
 	else
 		return (c);
 }
+
+// int	main(void)
+// {
+
+// }
