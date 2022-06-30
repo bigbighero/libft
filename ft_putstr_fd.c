@@ -6,7 +6,7 @@
 /*   By: roferrei <roferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/03 23:26:03 by roferrei          #+#    #+#             */
-/*   Updated: 2022/06/04 00:24:15 by roferrei         ###   ########.fr       */
+/*   Updated: 2022/06/30 03:09:50 by roferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_putstr_fd(char *s, int fd)
 	i = 0;
 	while (str[i] != '\0')
 	{
-		write(fd, &str[i], 1);
+		write (fd, &str[i], 1);
 		i++;
 	}
 }

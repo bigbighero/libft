@@ -6,7 +6,7 @@
 /*   By: roferrei <roferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/03 23:25:49 by roferrei          #+#    #+#             */
-/*   Updated: 2022/06/28 00:35:07 by roferrei         ###   ########.fr       */
+/*   Updated: 2022/06/30 03:09:31 by roferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	while (i < n)
 	{
 		if (*str == character)
-			return(str);
+			return (str);
 		str++;
 		i++;
 	}
@@ -34,7 +34,8 @@ void	*ft_memchr(const void *s, int c, size_t n)
 // int main(void)
 // {
 // 	printf("test de ft_memchr: \n");
-// 	if (memchr("source", 'r', 2) == ft_memchr("source", 'r', 2) && !strcmp(memchr("source", 'r', 5), ft_memchr("source", 'r', 5)))
+// 	if (memchr("source", 'r', 2) == ft_memchr("source", 'r', 2) 
+	// && !strcmp(memchr("source", 'r', 5), ft_memchr("source", 'r', 5)))
 // 		printf("OK\n");
 // 	else
 // 		printf("Failed.\n");
