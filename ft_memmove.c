@@ -6,11 +6,12 @@
 /*   By: roferrei <roferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/03 23:25:55 by roferrei          #+#    #+#             */
-/*   Updated: 2022/06/30 03:15:11 by roferrei         ###   ########.fr       */
+/*   Updated: 2022/07/01 01:56:55 by roferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
+#include <stdlib.h>
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
@@ -33,11 +34,11 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	char	*tmp;
 
-	tmp = (char *)malloc(sizeoff(char)*len);
+	tmp = (char *)malloc(sizeof(char)*n);
 	if (tmp == NULL)
 		return (NULL);
-	ft_memcpy(tmp, src, len);
-	ft_memcpy(dest, tmp, len);
+	ft_memcpy(tmp, src, n);
+	ft_memcpy(dest, tmp, n);
 	free(tmp);
 	return (dest);
 }
