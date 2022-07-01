@@ -6,24 +6,11 @@
 /*   By: roferrei <roferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/03 23:25:29 by roferrei          #+#    #+#             */
-/*   Updated: 2022/07/01 02:21:31 by roferrei         ###   ########.fr       */
+/*   Updated: 2022/07/01 23:54:47 by roferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-void	*ft_memset(void *s, int c, size_t n)
-{
-	char	*str;
-
-	str = (char *)s;
-	while (n > 0)
-	{
-		str[n - 1] = c;
-		n--;
-	}
-	return (s);
-}
 
 void	ft_bzero(void *s, size_t n)
 {
