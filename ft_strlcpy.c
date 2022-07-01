@@ -6,7 +6,7 @@
 /*   By: roferrei <roferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/03 23:26:13 by roferrei          #+#    #+#             */
-/*   Updated: 2022/07/01 02:22:39 by roferrei         ###   ########.fr       */
+/*   Updated: 2022/07/01 02:45:24 by roferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,14 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 
 	i = 0;
 	if (!size)
-		return (strlen(src));
+		return (ft_strlen(src));
 	while (i + 1 < size && src[i])
 	{
 		dst[i] = src[i];
 		i++;
 	}
 	dst[i] = '\0';
-	return (strlen(src));
+	return (ft_strlen(src));
 }
 
 // int main (void)
