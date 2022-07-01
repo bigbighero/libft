@@ -6,11 +6,11 @@
 /*   By: roferrei <roferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/03 23:25:58 by roferrei          #+#    #+#             */
-/*   Updated: 2022/06/04 00:23:27 by roferrei         ###   ########.fr       */
+/*   Updated: 2022/07/01 02:19:29 by roferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
 void	ft_putchar_fd(char c, int fd)
 {

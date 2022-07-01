@@ -6,11 +6,11 @@
 /*   By: roferrei <roferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/03 23:25:35 by roferrei          #+#    #+#             */
-/*   Updated: 2022/06/16 23:22:23 by roferrei         ###   ########.fr       */
+/*   Updated: 2022/07/01 02:21:40 by roferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
+#include "libft.h"
 
 int	ft_isalpha(int c)
 {

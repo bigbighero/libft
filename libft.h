@@ -6,7 +6,9 @@
 /*   By: roferrei <roferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/01 02:04:59 by roferrei          #+#    #+#             */
-/*   Updated: 2022/07/01 02:05:00 by roferrei         ###   ########.fr       */
+/*   Updated: 2022/07/01 02:23:14 by roferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
+#include <unistd.h>

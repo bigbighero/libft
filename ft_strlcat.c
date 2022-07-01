@@ -6,11 +6,11 @@
 /*   By: roferrei <roferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/03 23:26:11 by roferrei          #+#    #+#             */
-/*   Updated: 2022/06/30 03:07:47 by roferrei         ###   ########.fr       */
+/*   Updated: 2022/07/01 02:22:37 by roferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 size_t	ft_strlen(const char *s)
 {

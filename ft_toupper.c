@@ -6,11 +6,11 @@
 /*   By: roferrei <roferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/03 23:26:30 by roferrei          #+#    #+#             */
-/*   Updated: 2022/06/30 03:16:43 by roferrei         ###   ########.fr       */
+/*   Updated: 2022/07/01 02:22:51 by roferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
+#include "libft.h"
 
 int	ft_toupper(int c)
 {

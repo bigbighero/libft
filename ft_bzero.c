@@ -6,11 +6,11 @@
 /*   By: roferrei <roferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/03 23:25:29 by roferrei          #+#    #+#             */
-/*   Updated: 2022/06/15 10:01:24 by roferrei         ###   ########.fr       */
+/*   Updated: 2022/07/01 02:21:31 by roferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <strings.h>
+#include "libft.h"
 
 void	*ft_memset(void *s, int c, size_t n)
 {
