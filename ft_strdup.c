@@ -1,31 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: roferrei <roferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/03 23:26:24 by roferrei          #+#    #+#             */
-/*   Updated: 2022/07/02 01:43:11 by roferrei         ###   ########.fr       */
+/*   Created: 2022/06/03 23:26:07 by roferrei          #+#    #+#             */
+/*   Updated: 2022/07/02 01:47:21 by roferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *s, int c)
+char	*strdup(const char *s)
 {
-	unsigned int	i;
-	char			*last;
+	char	*point;
+	size_t	i;
 
-	last = NULL;
 	i = 0;
+	point = (char *)malloc(sizeof(char) * ft_strlen(s) + 1);
+	if (point == NULL)
+		return (NULL);
 	while (s[i])
 	{
-		if (s[i] == (char)c)
-			last = (char *)&s[i];
+		point[i] = s[i];
 		i++;
 	}
-	if ((char)c == s[i])
-		return ((char *)&s[i]);
-	return (last);
+	point[i] = '\0';
+	return (point);
 }
