@@ -6,13 +6,13 @@
 /*   By: roferrei <roferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/03 23:26:07 by roferrei          #+#    #+#             */
-/*   Updated: 2022/07/02 01:47:21 by roferrei         ###   ########.fr       */
+/*   Updated: 2022/07/02 15:54:56 by roferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*strdup(const char *s)
+char	*ft_strdup(const char *s)
 {
 	char	*point;
 	size_t	i;
