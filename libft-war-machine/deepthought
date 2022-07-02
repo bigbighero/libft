@@ -1,0 +1,81 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+roferrei-workspace-7c5896759d-k4d45
+Linux 5.4.0-94-generic x86_64
+$> date
+Sat 02 Jul 2022 04:47:53 PM CEST
+$> gcc --version
+Ubuntu clang version 12.0.1-++20211029101322+fed41342a82f-1~exp1~20211029221816.4
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+$> clang --version
+Ubuntu clang version 12.0.1-++20211029101322+fed41342a82f-1~exp1~20211029221816.4
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+
+= libft.h=======================================================================
+$> norminette libft.h | grep -E '(Error|Warning)'
+
+= Compiling libft ==============================================================
+$> make re
+rm -f ft_atoi.o ft_bzero.o ft_calloc.o ft_isalnum.o ft_isalpha.o ft_isascii.o ft_isdigit.o ft_isprint.o ft_memchr.o ft_memcmp.o ft_memcpy.o ft_memmove.o ft_memset.o ft_putchar_fd.o ft_putstr_fd.o ft_strchr.o ft_strdup.o ft_strlcat.o ft_strlcpy.o ft_strlen.o ft_strncmp.o ft_strnstr.o ft_strrchr.o ft_tolower.o ft_toupper.o 
+rm -f libft.a
+gcc -Wall -Wextra -Werror   -c -o ft_atoi.o ft_atoi.c
+gcc -Wall -Wextra -Werror   -c -o ft_bzero.o ft_bzero.c
+gcc -Wall -Wextra -Werror   -c -o ft_calloc.o ft_calloc.c
+gcc -Wall -Wextra -Werror   -c -o ft_isalnum.o ft_isalnum.c
+gcc -Wall -Wextra -Werror   -c -o ft_isalpha.o ft_isalpha.c
+gcc -Wall -Wextra -Werror   -c -o ft_isascii.o ft_isascii.c
+gcc -Wall -Wextra -Werror   -c -o ft_isdigit.o ft_isdigit.c
+gcc -Wall -Wextra -Werror   -c -o ft_isprint.o ft_isprint.c
+gcc -Wall -Wextra -Werror   -c -o ft_memchr.o ft_memchr.c
+gcc -Wall -Wextra -Werror   -c -o ft_memcmp.o ft_memcmp.c
+gcc -Wall -Wextra -Werror   -c -o ft_memcpy.o ft_memcpy.c
+gcc -Wall -Wextra -Werror   -c -o ft_memmove.o ft_memmove.c
+gcc -Wall -Wextra -Werror   -c -o ft_memset.o ft_memset.c
+gcc -Wall -Wextra -Werror   -c -o ft_putchar_fd.o ft_putchar_fd.c
+gcc -Wall -Wextra -Werror   -c -o ft_putstr_fd.o ft_putstr_fd.c
+gcc -Wall -Wextra -Werror   -c -o ft_strchr.o ft_strchr.c
+gcc -Wall -Wextra -Werror   -c -o ft_strdup.o ft_strdup.c
+gcc -Wall -Wextra -Werror   -c -o ft_strlcat.o ft_strlcat.c
+gcc -Wall -Wextra -Werror   -c -o ft_strlcpy.o ft_strlcpy.c
+gcc -Wall -Wextra -Werror   -c -o ft_strlen.o ft_strlen.c
+gcc -Wall -Wextra -Werror   -c -o ft_strncmp.o ft_strncmp.c
+gcc -Wall -Wextra -Werror   -c -o ft_strnstr.o ft_strnstr.c
+gcc -Wall -Wextra -Werror   -c -o ft_strrchr.o ft_strrchr.c
+gcc -Wall -Wextra -Werror   -c -o ft_tolower.o ft_tolower.c
+gcc -Wall -Wextra -Werror   -c -o ft_toupper.o ft_toupper.c
+ar rcs libft.a ft_atoi.o ft_bzero.o ft_calloc.o ft_isalnum.o ft_isalpha.o ft_isascii.o ft_isdigit.o ft_isprint.o ft_memchr.o ft_memcmp.o ft_memcpy.o ft_memmove.o ft_memset.o ft_putchar_fd.o ft_putstr_fd.o ft_strchr.o ft_strdup.o ft_strlcat.o ft_strlcpy.o ft_strlen.o ft_strncmp.o ft_strnstr.o ft_strrchr.o ft_tolower.o ft_toupper.o
+
+$> make bonus
+gcc -Wall -Wextra -Werror   -c -o ft_atoi.o ft_atoi.c
+gcc -Wall -Wextra -Werror   -c -o ft_bzero.o ft_bzero.c
+gcc -Wall -Wextra -Werror   -c -o ft_calloc.o ft_calloc.c
+gcc -Wall -Wextra -Werror   -c -o ft_isalnum.o ft_isalnum.c
+gcc -Wall -Wextra -Werror   -c -o ft_isalpha.o ft_isalpha.c
+gcc -Wall -Wextra -Werror   -c -o ft_isascii.o ft_isascii.c
+gcc -Wall -Wextra -Werror   -c -o ft_isdigit.o ft_isdigit.c
+gcc -Wall -Wextra -Werror   -c -o ft_isprint.o ft_isprint.c
+gcc -Wall -Wextra -Werror   -c -o ft_memchr.o ft_memchr.c
+gcc -Wall -Wextra -Werror   -c -o ft_memcmp.o ft_memcmp.c
+gcc -Wall -Wextra -Werror   -c -o ft_memcpy.o ft_memcpy.c
+gcc -Wall -Wextra -Werror   -c -o ft_memmove.o ft_memmove.c
+gcc -Wall -Wextra -Werror   -c -o ft_memset.o ft_memset.c
+gcc -Wall -Wextra -Werror   -c -o ft_putchar_fd.o ft_putchar_fd.c
+gcc -Wall -Wextra -Werror   -c -o ft_putstr_fd.o ft_putstr_fd.c
+gcc -Wall -Wextra -Werror   -c -o ft_strchr.o ft_strchr.c
+gcc -Wall -Wextra -Werror   -c -o ft_strdup.o ft_strdup.c
+gcc -Wall -Wextra -Werror   -c -o ft_strlcat.o ft_strlcat.c
+gcc -Wall -Wextra -Werror   -c -o ft_strlcpy.o ft_strlcpy.c
+gcc -Wall -Wextra -Werror   -c -o ft_strlen.o ft_strlen.c
+gcc -Wall -Wextra -Werror   -c -o ft_strncmp.o ft_strncmp.c
+gcc -Wall -Wextra -Werror   -c -o ft_strnstr.o ft_strnstr.c
+gcc -Wall -Wextra -Werror   -c -o ft_strrchr.o ft_strrchr.c
+gcc -Wall -Wextra -Werror   -c -o ft_tolower.o ft_tolower.c
+gcc -Wall -Wextra -Werror   -c -o ft_toupper.o ft_toupper.c
+ar rcs libft.a ft_atoi.o ft_bzero.o ft_calloc.o ft_isalnum.o ft_isalpha.o ft_isascii.o ft_isdigit.o ft_isprint.o ft_memchr.o ft_memcmp.o ft_memcpy.o ft_memmove.o ft_memset.o ft_putchar_fd.o ft_putstr_fd.o ft_strchr.o ft_strdup.o ft_strlcat.o ft_strlcpy.o ft_strlen.o ft_strncmp.o ft_strnstr.o ft_strrchr.o ft_tolower.o ft_toupper.o 
+
+$> ls -la libft.a
+-rw-r--r-- 1 coder coder 31700 Jul  2 16:48 /home/coder/libfta/libft-war-machine/dirlibft/libft.a
