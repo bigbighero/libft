@@ -6,7 +6,7 @@
 #    By: roferrei <roferrei@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/03 23:08:11 by roferrei          #+#    #+#              #
-#    Updated: 2022/07/02 02:03:40 by roferrei         ###   ########.fr        #
+#    Updated: 2022/07/02 17:37:48 by roferrei         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -41,5 +41,9 @@ re:				fclean $(NAME)
 
 bonus:			$(OBJS) $(BONUS_OBJS)
 				ar rcs $(NAME) $(OBJS) $(BONUS_OBJS)
+
+so:
+				$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRCS)
+				gcc -nostartfiles -shared -o libft.so $(OBJS)
 
 .PHONY:			all clean fclean re bonus
