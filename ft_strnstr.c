@@ -6,7 +6,7 @@
 /*   By: roferrei <roferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/03 23:26:19 by roferrei          #+#    #+#             */
-/*   Updated: 2022/07/02 02:03:18 by roferrei         ###   ########.fr       */
+/*   Updated: 2022/07/15 16:15:16 by roferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,5 +31,5 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 			return ((char *)big + i);
 		i++;
 	}
-	return (NULL);
+	return (0);
 }
