@@ -6,7 +6,7 @@
 /*   By: roferrei <roferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/03 23:25:46 by roferrei          #+#    #+#             */
-/*   Updated: 2022/07/19 20:36:59 by roferrei         ###   ########.fr       */
+/*   Updated: 2022/07/19 20:41:27 by roferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 static void	get_nbr_str(char *str, int n, size_t size)
 {
 	str[size] = '\0';
-	if (n>=0)
+	if (n >= 0)
 	{
 		while (size--)
 		{
@@ -34,7 +34,7 @@ static void	get_nbr_str(char *str, int n, size_t size)
 	}
 }
 
-char *ft_itoa(int n)
+char	*ft_itoa(int n)
 {
 	int		temp;
 	char	*num;
