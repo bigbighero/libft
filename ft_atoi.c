@@ -6,7 +6,7 @@
 /*   By: roferrei <roferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/03 23:25:26 by roferrei          #+#    #+#             */
-/*   Updated: 2022/07/15 16:47:40 by roferrei         ###   ########.fr       */
+/*   Updated: 2022/07/19 21:14:36 by roferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,29 +19,36 @@
 // #include <stdio.h>
 #include "libft.h"
 
+static int	ft_isspace(int c)
+{
+	if (c == ' ' || c == '\n' || c == '\t' || c == '\r'
+		|| c == '\f' || c == '\v')
+		return (1);
+	return (0);
+}
+
 int	ft_atoi(const char *nptr)
 {
-	long int	i;
-	long int	res;
-	long int	sign;
+	int	num;
+	int	sign;
 
-	i = 0;
-	while (nptr[i] == 32 || (nptr[i] >= 9 && nptr[i] <= 13))
-		i++;
+	while ((ft_isspace(*nptr)))
+		nptr++;
 	sign = 1;
-	if (nptr[i] == '-' || nptr[i] == '+')
+	if (*nptr == '+' || *nptr == '-')
 	{
-		if (nptr[i] == '-')
+		if (*nptr == '-')
 			sign = -1;
-		i++;
+		nptr++;
 	}
-	res = 0;
-	while (nptr[i] >= '0' && nptr[i] <= '9')
+	num = 0;
+	while ((ft_isdigit(*nptr)))
 	{
-		res = res * 10 + nptr[i] - '0';
-		i++;
+		num *= 10;
+		num += sign * (*nptr - '0');
+		nptr++;
 	}
-	return (res * sign);
+	return (num);
 }
 
 // int main(int ac, char **av)
