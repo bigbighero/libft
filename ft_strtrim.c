@@ -1,41 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: roferrei <roferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/03 23:25:57 by roferrei          #+#    #+#             */
-/*   Updated: 2022/07/01 02:22:24 by roferrei         ###   ########.fr       */
+/*   Created: 2022/06/03 23:26:22 by roferrei          #+#    #+#             */
+/*   Updated: 2022/07/19 19:29:14 by roferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <string.h>
 
-void	*ft_memset(void *s, int c, size_t n)
+char	*ft_strtrim(char const *s1, char const *set)
 {
-	unsigned char	*str;
+	size_t	start;
+	size_t	len;
 
-
-	str = (unsigned char *)s;
-	while (n > 0)
-	{
-		str[n - 1] = c;
-		n--;
-	}
-	return (s);
+	if (s1 == NULL || set == NULL)
+		return (NULL);
+	start = 0;
+	while (s1[start] && ft_strchr(set, s1[start] != NULL))
+		start++;
+	len = ft_strlen(&s1[start]); //& == pointer addres
+	if (len != 0)
+		while (s1[start + len - 1]
+			&& ft_strrchr(set, s1[start + len - 1]) != NULL)
+			len--;
+	return (ft_substr(s1, start, len));
 }
-
-// int	main ()
-// {
-// 	char	pnt[] = "";
-// 	char	pnt1[] = "";
-// 	int		a = 5;
-
-// 	ft_memset(pnt, 'a', 3);
-// 	memset(pnt1, 'a', 3);
-// 	printf("O resultado é %s\n", pnt);
-// 	printf("O resultado é %s\n", pnt1);
-// }

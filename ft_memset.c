@@ -6,7 +6,7 @@
 /*   By: roferrei <roferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/03 23:25:57 by roferrei          #+#    #+#             */
-/*   Updated: 2022/07/01 02:22:24 by roferrei         ###   ########.fr       */
+/*   Updated: 2022/07/19 19:27:55 by roferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,13 +27,12 @@ void	*ft_memset(void *s, int c, size_t n)
 
 // int	main ()
 // {
-// 	char str[30];
+// 	char	pnt[] = "";
+// 	char	pnt1[] = "";
+// 	int		a = 5;
 
-// 	strcpy(str, "this is a test");
-// 	puts(str);
-
-// 	ft_memset(str, '0', 7);
-// 	puts(str);
-
-// 	return (0);
+// 	ft_memset(pnt, 'a', 3);
+// 	memset(pnt1, 'a', 3);
+// 	printf("O resultado é %s\n", pnt);
+// 	printf("O resultado é %s\n", pnt1);
 // }

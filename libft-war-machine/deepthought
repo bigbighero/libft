@@ -3,7 +3,7 @@ $> hostname; uname -msr
 roferrei-workspace-7c5896759d-vkhzm
 Linux 5.4.0-94-generic x86_64
 $> date
-Tue 19 Jul 2022 01:24:21 AM CEST
+Tue 19 Jul 2022 02:21:23 AM CEST
 $> gcc --version
 Ubuntu clang version 12.0.1-++20211029101322+fed41342a82f-1~exp1~20211029221816.4
 Target: x86_64-pc-linux-gnu
@@ -17,10 +17,13 @@ InstalledDir: /usr/bin
 
 = libft.h=======================================================================
 $> norminette libft.h | grep -E '(Error|Warning)'
+/home/coder/libfta/libft-war-machine/dirlibft/libft.h: Error!
+Error: SPACE_REPLACE_TAB    (line:  47, col:   5):	Found space when expecting tab
+Norme check failed
 
 = Compiling libft ==============================================================
 $> make re
-rm -f ft_atoi.o ft_bzero.o ft_calloc.o ft_isalnum.o ft_isalpha.o ft_isascii.o ft_isdigit.o ft_isprint.o ft_memchr.o ft_memcmp.o ft_memcpy.o ft_memmove.o ft_memset.o ft_putchar_fd.o ft_putstr_fd.o ft_strchr.o ft_strdup.o ft_strlcat.o ft_strlcpy.o ft_strlen.o ft_strncmp.o ft_strnstr.o ft_strrchr.o ft_tolower.o ft_toupper.o ft_substr.o 
+rm -f ft_atoi.o ft_bzero.o ft_calloc.o ft_isalnum.o ft_isalpha.o ft_isascii.o ft_isdigit.o ft_isprint.o ft_memchr.o ft_memcmp.o ft_memcpy.o ft_memmove.o ft_memset.o ft_putchar_fd.o ft_putstr_fd.o ft_strchr.o ft_strdup.o ft_strlcat.o ft_strlcpy.o ft_strlen.o ft_strncmp.o ft_strnstr.o ft_strrchr.o ft_tolower.o ft_toupper.o ft_substr.o ft_strjoin 
 rm -f libft.a
 gcc -Wall -Wextra -Werror   -c -o ft_atoi.o ft_atoi.c
 gcc -Wall -Wextra -Werror   -c -o ft_bzero.o ft_bzero.c
@@ -48,7 +51,7 @@ gcc -Wall -Wextra -Werror   -c -o ft_strrchr.o ft_strrchr.c
 gcc -Wall -Wextra -Werror   -c -o ft_tolower.o ft_tolower.c
 gcc -Wall -Wextra -Werror   -c -o ft_toupper.o ft_toupper.c
 gcc -Wall -Wextra -Werror   -c -o ft_substr.o ft_substr.c
-ar rcs libft.a ft_atoi.o ft_bzero.o ft_calloc.o ft_isalnum.o ft_isalpha.o ft_isascii.o ft_isdigit.o ft_isprint.o ft_memchr.o ft_memcmp.o ft_memcpy.o ft_memmove.o ft_memset.o ft_putchar_fd.o ft_putstr_fd.o ft_strchr.o ft_strdup.o ft_strlcat.o ft_strlcpy.o ft_strlen.o ft_strncmp.o ft_strnstr.o ft_strrchr.o ft_tolower.o ft_toupper.o ft_substr.o
+make: *** No rule to make target 'ft_strjoin', needed by 'libft.a'.  Stop.
 
 $> make bonus
 gcc -Wall -Wextra -Werror   -c -o ft_atoi.o ft_atoi.c
@@ -77,141 +80,21 @@ gcc -Wall -Wextra -Werror   -c -o ft_strrchr.o ft_strrchr.c
 gcc -Wall -Wextra -Werror   -c -o ft_tolower.o ft_tolower.c
 gcc -Wall -Wextra -Werror   -c -o ft_toupper.o ft_toupper.c
 gcc -Wall -Wextra -Werror   -c -o ft_substr.o ft_substr.c
-ar rcs libft.a ft_atoi.o ft_bzero.o ft_calloc.o ft_isalnum.o ft_isalpha.o ft_isascii.o ft_isdigit.o ft_isprint.o ft_memchr.o ft_memcmp.o ft_memcpy.o ft_memmove.o ft_memset.o ft_putchar_fd.o ft_putstr_fd.o ft_strchr.o ft_strdup.o ft_strlcat.o ft_strlcpy.o ft_strlen.o ft_strncmp.o ft_strnstr.o ft_strrchr.o ft_tolower.o ft_toupper.o ft_substr.o 
+make: *** No rule to make target 'ft_strjoin', needed by 'bonus'.  Stop.
 
 $> ls -la libft.a
--rw-r--r-- 1 coder coder 33118 Jul 19 01:24 /home/coder/libfta/libft-war-machine/dirlibft/libft.a
 
 = Part1_functions ==============================================================
 
 = ft_memset.c ==================================================================
 $> norminette ft_memset.c | grep -E '(Error|Warning)'
+..//ft_memset.c: Error!
+Error: CONSECUTIVE_NEWLINES (line:  21, col:   1):	Consecutive newlines
+Error: EMPTY_LINE_FUNCTION  (line:  21, col:   1):	Empty line in function
+Norme check failed
 $> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_memset.c main.c libft.a -o user_exe
 
-= Test 1 ===================================================
-$> ./user_exe 01
-$> diff -U 3 user_output_test01 test01.output
-
-Diff OK :D
-= Test 2 ===================================================
-$> ./user_exe 02
-$> diff -U 3 user_output_test02 test02.output
-
-Diff OK :D
-= Test 3 ===================================================
-$> ./user_exe 03
-$> diff -U 3 user_output_test03 test03.output
-
-Diff OK :D
-= Test 4 ===================================================
-$> ./user_exe 04
-$> diff -U 3 user_output_test04 test04.output
-
-Diff OK :D
+clang: error: no such file or directory: '/home/coder/libfta/libft-war-machine/dirlibft/libft.a'
 
 = ft_bzero.c ===================================================================
 $> norminette ft_bzero.c | grep -E '(Error|Warning)'
-$> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_bzero.c main.c libft.a -o user_exe
-
-= Test 1 ===================================================
-$> ./user_exe 01
-$> diff -U 3 user_output_test01 test01.output
-
-Diff OK :D
-= Test 2 ===================================================
-$> ./user_exe 02
-$> diff -U 3 user_output_test02 test02.output
-
-Diff OK :D
-
-= ft_calloc.c ==================================================================
-$> norminette ft_calloc.c | grep -E '(Error|Warning)'
-$> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_calloc.c main.c libft.a -o user_exe
-
-= Test 1 ===================================================
-$> ./user_exe 01
-$> diff -U 3 user_output_test01 test01.output
-
-Diff OK :D
-
-= ft_memcpy.c ==================================================================
-$> norminette ft_memcpy.c | grep -E '(Error|Warning)'
-$> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_memcpy.c main.c libft.a -o user_exe
-
-= Test 1 ===================================================
-$> ./user_exe 01
-$> diff -U 3 user_output_test01 test01.output
-
-Diff OK :D
-= Test 2 ===================================================
-$> ./user_exe 02
-$> diff -U 3 user_output_test02 test02.output
-
-Diff OK :D
-= Test 3 ===================================================
-$> ./user_exe 03
-$> diff -U 3 user_output_test03 test03.output
-
-Diff OK :D
-
-= ft_memmove.c =================================================================
-$> norminette ft_memmove.c | grep -E '(Error|Warning)'
-$> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_memmove.c main.c libft.a -o user_exe
-
-= Test 1 ===================================================
-$> ./user_exe 01
-$> diff -U 3 user_output_test01 test01.output
-
-Diff OK :D
-= Test 2 ===================================================
-$> ./user_exe 02
-$> diff -U 3 user_output_test02 test02.output
-
-Diff OK :D
-= Test 3 ===================================================
-$> ./user_exe 03
-$> diff -U 3 user_output_test03 test03.output
-
-Diff OK :D
-= Test 4 ===================================================
-$> ./user_exe 04
-$> diff -U 3 user_output_test04 test04.output
-
-Diff OK :D
-= Test 5 ===================================================
-$> ./user_exe 05
-$> diff -U 3 user_output_test05 test05.output
-
-Diff OK :D
-
-= ft_memchr.c ==================================================================
-$> norminette ft_memchr.c | grep -E '(Error|Warning)'
-$> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_memchr.c main.c libft.a -o user_exe
-
-= Test 1 ===================================================
-$> ./user_exe 01
-$> diff -U 3 user_output_test01 test01.output
-
-Diff OK :D
-= Test 2 ===================================================
-$> ./user_exe 02
-$> diff -U 3 user_output_test02 test02.output
-
-Diff OK :D
-= Test 3 ===================================================
-$> ./user_exe 03
-$> diff -U 3 user_output_test03 test03.output
-
-Diff OK :D
-= Test 4 ===================================================
-$> ./user_exe 04
-$> diff -U 3 user_output_test04 test04.output
-
-Diff OK :D
-= Test 5 ===================================================
-$> ./user_exe 05
-$> diff -U 3 user_output_test05 test05.output
-
-Diff OK :D
-= Test 6 ===================================================
-$> ./user_exe 06
