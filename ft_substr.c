@@ -6,7 +6,7 @@
 /*   By: roferrei <roferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/03 23:26:26 by roferrei          #+#    #+#             */
-/*   Updated: 2022/06/03 23:26:27 by roferrei         ###   ########.fr       */
+/*   Updated: 2022/07/19 19:32:29 by roferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t	j;
 	char	*str;
 
-	str = (char*)malloc(sizeof(*s) * (len + 1));
+	str = (char *)malloc(sizeof(*s) * (len + 1));
 	if (!str)
 		return (NULL);
 	i = 0;

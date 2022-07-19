@@ -6,7 +6,7 @@
 /*   By: roferrei <roferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/03 23:26:22 by roferrei          #+#    #+#             */
-/*   Updated: 2022/07/19 19:29:14 by roferrei         ###   ########.fr       */
+/*   Updated: 2022/07/19 19:32:47 by roferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,11 @@ char	*ft_strtrim(char const *s1, char const *set)
 	start = 0;
 	while (s1[start] && ft_strchr(set, s1[start] != NULL))
 		start++;
-	len = ft_strlen(&s1[start]); //& == pointer addres
+	len = ft_strlen(&s1[start]);
 	if (len != 0)
 		while (s1[start + len - 1]
 			&& ft_strrchr(set, s1[start + len - 1]) != NULL)
 			len--;
 	return (ft_substr(s1, start, len));
 }
+//& == pointer addres
