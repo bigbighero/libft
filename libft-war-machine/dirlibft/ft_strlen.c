@@ -1,33 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strmapi.c                                       :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: roferrei <roferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/03 23:26:17 by roferrei          #+#    #+#             */
-/*   Updated: 2022/07/20 17:07:44 by roferrei         ###   ########.fr       */
+/*   Created: 2022/06/03 23:26:15 by roferrei          #+#    #+#             */
+/*   Updated: 2022/07/01 02:22:42 by roferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
+size_t	ft_strlen(const char *s)
 {
-	unsigned int	i;
-	char			*str;
+	size_t	i;
 
-	if (!s)
-		return (NULL);
 	i = 0;
-	str = (char *)malloc(sizeof(char) * (ft_strlen(s)) + 1);
-	if (str == NULL)
-		return (NULL);
 	while (s[i] != '\0')
-	{
-		str[i] = f(i, s[i]);
 		i++;
-	}
-	str[i] = '\0';
-	return (str);
+	return (i);
 }
+
+// int main (void)
+// {
+// 	char a[20] = "Programa";
+// 	char b[20] = {'P','r','o','g','r','a','m', '\0'};
+// 	printf("Lenght of string a = %zu \n", ft_strlen(a));
+// 	printf("Lenght of string b = %zu \n", ft_strlen(b));
+// 	printf("Lenght of string a = %zu \n", strlen(a));
+// 	printf("Lenght of string b = %zu \n", strlen(b));
+// 	return (0);
+// }

@@ -1,33 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strmapi.c                                       :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: roferrei <roferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/03 23:26:17 by roferrei          #+#    #+#             */
-/*   Updated: 2022/07/20 17:07:44 by roferrei         ###   ########.fr       */
+/*   Created: 2022/06/03 23:25:57 by roferrei          #+#    #+#             */
+/*   Updated: 2022/07/19 19:27:55 by roferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
+void	*ft_memset(void *s, int c, size_t n)
 {
-	unsigned int	i;
-	char			*str;
+	unsigned char	*str;
 
-	if (!s)
-		return (NULL);
-	i = 0;
-	str = (char *)malloc(sizeof(char) * (ft_strlen(s)) + 1);
-	if (str == NULL)
-		return (NULL);
-	while (s[i] != '\0')
+	str = (unsigned char *)s;
+	while (n > 0)
 	{
-		str[i] = f(i, s[i]);
-		i++;
+		str[n - 1] = c;
+		n--;
 	}
-	str[i] = '\0';
-	return (str);
+	return (s);
 }
+
+// int	main ()
+// {
+// 	char	pnt[] = "";
+// 	char	pnt1[] = "";
+// 	int		a = 5;
+
+// 	ft_memset(pnt, 'a', 3);
+// 	memset(pnt1, 'a', 3);
+// 	printf("O resultado é %s\n", pnt);
+// 	printf("O resultado é %s\n", pnt1);
+// }

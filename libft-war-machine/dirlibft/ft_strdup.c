@@ -1,33 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strmapi.c                                       :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: roferrei <roferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/03 23:26:17 by roferrei          #+#    #+#             */
-/*   Updated: 2022/07/20 17:07:44 by roferrei         ###   ########.fr       */
+/*   Created: 2022/06/03 23:26:07 by roferrei          #+#    #+#             */
+/*   Updated: 2022/07/02 15:54:56 by roferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
+char	*ft_strdup(const char *s)
 {
-	unsigned int	i;
-	char			*str;
+	char	*point;
+	size_t	i;
 
-	if (!s)
-		return (NULL);
 	i = 0;
-	str = (char *)malloc(sizeof(char) * (ft_strlen(s)) + 1);
-	if (str == NULL)
+	point = (char *)malloc(sizeof(char) * ft_strlen(s) + 1);
+	if (point == NULL)
 		return (NULL);
-	while (s[i] != '\0')
+	while (s[i])
 	{
-		str[i] = f(i, s[i]);
+		point[i] = s[i];
 		i++;
 	}
-	str[i] = '\0';
-	return (str);
+	point[i] = '\0';
+	return (point);
 }
