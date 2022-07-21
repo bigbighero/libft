@@ -6,7 +6,7 @@
 /*   By: roferrei <roferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/03 23:26:11 by roferrei          #+#    #+#             */
-/*   Updated: 2022/07/01 23:59:31 by roferrei         ###   ########.fr       */
+/*   Updated: 2022/07/21 17:55:38 by roferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,19 +42,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	}
 	return (i + src_size);
 }
-
-// int main(void)
-// {
-// 	printf("\nTest de ft_strlcat: \n");
-// 	char *c1 = "source";
-// 	char d2[20] = "destino";
-// 	char d3[20] = "destino";
-// 	char d5[20] = "orig";
-// 	char d6[20] = "orig";
-// 	char d7[20] = "orig";
-// 	printf("7, destino: %lu, %s\n", ft_strlcat(d2, c1, 5), d2);
-// 	printf("9, destino: %lu, %s\n", ft_strlcat(d3, c1, 9), d3);
-// 	printf("10, dest: %lu, %s\n", ft_strlcat(d5, c1, 5), d5);
-// 	printf("10, destsou: %lu, %s\n", ft_strlcat(d6, c1, 8), d6);
-// 	printf("10, destsource: %lu, %s\n", ft_strlcat(d7, c1, 13), d7);
-// }
