@@ -6,7 +6,7 @@
 /*   By: roferrei <roferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/03 23:25:51 by roferrei          #+#    #+#             */
-/*   Updated: 2022/07/01 02:22:11 by roferrei         ###   ########.fr       */
+/*   Updated: 2022/07/21 17:56:36 by roferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,14 +29,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-
-// int main(void)
-// {
-// 	char s1[] = "42cadet";
-// 	char s2[] = "42cadetabc";
-// 	printf("Test de ft_memcmp: %d\n", ft_memcmp(s1, s2, 3));
-// 	printf("Test de memcmp: %d\n", memcmp(s1, s2, 3));
-// 	printf("Test de ft_memcmp: %d\n", ft_memcmp(s1, s2, 8));
-// 	printf("Test de memcmp: %d\n", memcmp(s1, s2, 8));
-// 	return (0);
-// }
