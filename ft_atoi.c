@@ -6,7 +6,7 @@
 /*   By: roferrei <roferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/03 23:25:26 by roferrei          #+#    #+#             */
-/*   Updated: 2022/07/21 19:50:19 by roferrei         ###   ########.fr       */
+/*   Updated: 2022/07/21 19:54:10 by roferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,5 +43,3 @@ int	ft_atoi(const char *nptr)
 	}
 	return (num);
 }
-
-// asds
