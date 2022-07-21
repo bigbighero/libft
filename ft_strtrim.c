@@ -6,7 +6,7 @@
 /*   By: roferrei <roferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/03 23:26:22 by roferrei          #+#    #+#             */
-/*   Updated: 2022/07/19 19:34:30 by roferrei         ###   ########.fr       */
+/*   Updated: 2022/07/21 17:54:55 by roferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,4 +29,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 			len--;
 	return (ft_substr(s1, start, len));
 }
-//& == pointer addres
